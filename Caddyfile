@@ -1,0 +1,8 @@
+# Caddyfile
+# Konfigurasi ini akan membaca nama domain dari variabel DOMAIN di dalam Docker.
+# Jika variabel DOMAIN kosong, ia akan menggunakan 'localhost'.
+
+{$DOMAIN:localhost} {
+    # Meneruskan semua lalu lintas HTTP/HTTPS ke container aplikasi (Apache)
+    reverse_proxy app:80
+}

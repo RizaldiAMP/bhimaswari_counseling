@@ -1,0 +1,24 @@
+<?php
+
+declare(strict_types=1);
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::table('chat_sessions', function (Blueprint $table) {
+            $table->dateTime('timer_started_at')->nullable()->after('started_at');
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::table('chat_sessions', function (Blueprint $table) {
+            $table->dropColumn('timer_started_at');
+        });
+    }
+};

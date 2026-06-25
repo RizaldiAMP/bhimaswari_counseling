@@ -1,0 +1,89 @@
+﻿[36mvite v6.4.1 [32mbuilding for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 3 modules transformed.
+node.exe : 
+[31mΓ£ù[39m Build 
+failed in 3.46s
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: ([31mΓ£ù[39m   
+  Build failed in 3    
+.46s:String) [], R    
+emoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+[31merror during 
+build:
+[31m[vite:css] 
+[postcss] Cannot find 
+module 'daisyui/src/the
+ming/themes'
+Require stack:
+- C:\PROJECT WEBSITE\bh
+imaswari_counseling\tai
+lwind.config.js[31m
+file: [36mC:/PROJECT W
+EBSITE/bhimaswari_couns
+eling/resources/css/app
+.css:undefined:NaN[31m
+    at Module._resolveF
+ilename (node:internal/
+modules/cjs/loader:1421
+:15)
+    at require.resolve 
+(node:internal/modules/
+helpers:163:19)
+    at _resolve 
+(C:\PROJECT WEBSITE\bhi
+maswari_counseling\node
+_modules\jiti\dist\jiti
+.js:1:246378)
+    at jiti 
+(C:\PROJECT WEBSITE\bhi
+maswari_counseling\node
+_modules\jiti\dist\jiti
+.js:1:249092)
+    at C:\PROJECT WEBSI
+TE\bhimaswari_counselin
+g\tailwind.config.js:47
+:24
+    at evalModule 
+(C:\PROJECT WEBSITE\bhi
+maswari_counseling\node
+_modules\jiti\dist\jiti
+.js:1:251913)
+    at jiti 
+(C:\PROJECT WEBSITE\bhi
+maswari_counseling\node
+_modules\jiti\dist\jiti
+.js:1:249841)
+    at C:\PROJECT WEBSI
+TE\bhimaswari_counselin
+g\node_modules\tailwind
+css\lib\lib\load-config
+.js:53:30
+    at loadConfig 
+(C:\PROJECT WEBSITE\bhi
+maswari_counseling\node
+_modules\tailwindcss\li
+b\lib\load-config.js:55
+:6)
+    at 
+getTailwindConfig 
+(C:\PROJECT WEBSITE\bhi
+maswari_counseling\node
+_modules\tailwindcss\li
+b\lib\setupTrackingCont
+ext.js:74:116)[39m

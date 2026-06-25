@@ -1,0 +1,1 @@
+﻿resources/js/Pages/Client/Bookings/Create.vue(172,42): error TS2741: Property 'is_active' is missing in type 'ServicePrice' but required in type 'ServicePrice'.
