@@ -4,7 +4,7 @@
     reverse_proxy app:80
 }
 
-:443 {
+202.155.13.129:443 {
     tls internal
     reverse_proxy app:80
 }

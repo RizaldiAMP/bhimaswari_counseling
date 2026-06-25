@@ -22,7 +22,9 @@ class SecurityHeaders
             $response->header('X-Frame-Options', 'SAMEORIGIN');
             $response->header('X-Content-Type-Options', 'nosniff');
             $response->header('X-XSS-Protection', '1; mode=block');
-            $response->header('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
+            if ($request->isSecure()) {
+                $response->header('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
+            }
             
             // Content-Security-Policy (CSP) yang lebih longgar
             // Hanya aktif di production dan mengizinkan resource pihak ketiga (CDN) dengan HTTPS
