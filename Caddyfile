@@ -1,8 +1,10 @@
 # Caddyfile
-# Konfigurasi ini akan membaca nama domain dari variabel DOMAIN di dalam Docker.
-# Jika variabel DOMAIN kosong, ia akan menggunakan 'localhost'.
+# Mengizinkan akses HTTP biasa (port 80) dan HTTPS dengan sertifikat internal (port 443)
+:80 {
+    reverse_proxy app:80
+}
 
-{$DOMAIN:localhost} {
-    # Meneruskan semua lalu lintas HTTP/HTTPS ke container aplikasi (Apache)
+:443 {
+    tls internal
     reverse_proxy app:80
 }
